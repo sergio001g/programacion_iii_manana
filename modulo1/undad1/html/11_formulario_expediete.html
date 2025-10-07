@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head> 
+
+</head>
+<body>  
+    <h1>Formulario de Expediente</h1>
+    <form action="procesar.php" method="post">
+        <table border="0">
+            <tr>
+                <th>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </th>
+                <th>
+                    <label for="correo">Correo Electronico:</label>
+                    <input type="email" id="correo" name="correo">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="fecha">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha" name="fecha">
+                </th>
+                <th>
+                    <label for="color">Color Favorito:</label>
+                    <input type="color" id="color" name="color">
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="genero">Genero:</label>
+                    <input type="radio" id="m" name="genero"><label for="m">Masculino</label>
+                    <input type="radio" id="f" name="genero"><label for="f">Femenino</label>
+                </td>
+                <td>
+                    <label for="pais">Pais:</label>
+                    <select id="pais" name="pais">
+                        <option value="ec">Ecuador</option>
+                        <option value="co">Colombia</option>
+                        <option value="pe">Peru</option>
+                        <option value="ve">Venezuela</option>
+                    </select>
+                </td>
+            </tr>
+
+        </table>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
