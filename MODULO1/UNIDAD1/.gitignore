@@ -1,0 +1,62 @@
+# Node.js
+node_modules/
+**/node_modules/
+
+# Build outputs
+build/
+dist/
+**/dist/
+**/build/
+.cache/
+
+# Logs
+*.log
+logs/
+**/logs/
+
+# Dependency directories
+**/package-lock.json
+**/yarn.lock
+
+# Environment files
+.env
+**/.env
+
+# Coverage folder (for test coverage reports)
+coverage/
+**/coverage/
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore build and cache folders for client and server
+**/client/build/
+**/client/.cache/
+**/server/dist/
+**/server/.cache/
+
+# Ignore temporary files and folders from NestJS and React apps
+client/.env.local
+client/.env.production.local
+client/.env.development.local
+
+# Ignore temporary files from React
+client/node_modules/
+client/build/
+client/dist/
+
+# Ignore temporary files from NestJS
+server/node_modules/
+server/dist/
+server/.env
+
+# Other temporary files
+*.swp
+*.swo
