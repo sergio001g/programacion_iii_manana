@@ -1,0 +1,14 @@
+h1 {
+    color: blue;
+    background-color: yellow;
+    text-align: center;
+}
+
+h1.verde {
+    color: green;
+}
+h2.subtitulo {
+    color: green;
+    background-color: lightgray;
+    text-align: center;
+}
