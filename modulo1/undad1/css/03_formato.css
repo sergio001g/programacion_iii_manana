@@ -1,0 +1,43 @@
+/* Formato de texto */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.negrita {
+  font-weight: 700;
+}
+
+.cursiva {
+  font-style: italic;
+}
+
+.subrayado {
+  text-decoration: underline;
+}
+
+.mayusculas {
+  text-transform: uppercase;
+}
+
+.centro {
+  text-align: center;
+}
+
+.espaciado {
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+
+.destacado {
+  color: #0066cc;
+}
