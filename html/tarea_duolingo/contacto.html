@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto · Duolingo Demo</title>
+</head>
+<body>
+  <header>
+    <h1>Duolingo Demo</h1>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="acerca.html">Acerca</a></li>
+        <li><a href="servicios.html">Funciones</a></li>
+        <li><a href="tabla.html">Niveles</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <a href="#contenido">Saltar al contenido</a>
+  <article>
+    <h2 id="contenido">Contacto</h2>
+    <p>Este sitio es una práctica educativa inspirada en Duolingo.</p>
+    <p>Para comentarios o sugerencias del curso, puedes escribir a:
+       <strong>soporte-demo@ejemplo.local</strong></p>
+    <p>Gracias por aprender cada día. ¡Sigue tu racha!</p>
+  </article>
+  <aside>
+    <p>Volver al <a href="index.html">inicio</a> o conocer más <a href="acerca.html">acerca</a>.</p>
+  </aside>
+  <main>
+    <section>
+      <h2 id="formulario">Formulario</h2>
+      <article>
+        <p>Envía tus comentarios sobre la demo. También puedes escribir a
+           <a href="mailto:soporte-demo@ejemplo.local">soporte-demo@ejemplo.local</a> o visitar
+           <a href="https://www.duolingo.com/" target="_blank" rel="noopener">Duolingo</a>.</p>
+
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Datos personales</legend>
+            <p>
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </p>
+            <p>
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" name="correo" required>
+            </p>
+            <p>
+              <label for="edad">Edad</label>
+              <input type="number" id="edad" name="edad" min="1" max="120">
+            </p>
+            <p>
+              <label for="fecha">Fecha de inicio</label>
+              <input type="date" id="fecha" name="fecha">
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Preferencias</legend>
+            <p>
+              <label for="idioma">Idioma</label>
+              <select id="idioma" name="idioma" required>
+                <option value="">Selecciona</option>
+                <option>Inglés</option>
+                <option>Francés</option>
+                <option>Italiano</option>
+              </select>
+            </p>
+            <p>
+              Nivel:
+              <label for="nivel_a1">A1</label>
+              <input type="radio" id="nivel_a1" name="nivel" value="A1">
+              <label for="nivel_a2">A2</label>
+              <input type="radio" id="nivel_a2" name="nivel" value="A2">
+              <label for="nivel_b1">B1</label>
+              <input type="radio" id="nivel_b1" name="nivel" value="B1">
+            </p>
+            <p>
+              <label for="suscripcion">Suscribirme a novedades</label>
+              <input type="checkbox" id="suscripcion" name="suscripcion">
+            </p>
+            <p>
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="4" cols="40" required></textarea>
+            </p>
+          </fieldset>
+
+          <p>
+            <button type="submit">Enviar</button>
+          </p>
+        </form>
+        <p>Volver al <a href="#formulario">inicio del formulario</a> o a <a href="index.html">Inicio</a>.</p>
+        <hr>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <address>
+      Universidad UTE — Tecnología Superior en Desarrollo de Software —
+      Asignatura: Programación III — Profesor: Ing. Francisco Higuera
+    </address>
+    <p>Actualizado: <time datetime="2025-10-14">14/10/2025</time></p>
+  </footer>
+</body>
+</html>
