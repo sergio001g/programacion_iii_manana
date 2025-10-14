@@ -1,0 +1,22 @@
+/* Modelo de caja (Box Model) */
+* { box-sizing: border-box; }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.caja {
+  background: #f0f4ff;
+  border: 2px solid #9dbbff;
+  width: 160px;
+  min-height: 60px;
+}
+
+.margen { margin: 16px; }
+.relleno { padding: 16px; }
+.borde { border: 4px dashed #5a8cff; }
+.tamano { width: 200px; height: 100px; }
+.inline { display: inline; }
+.block { display: block; }

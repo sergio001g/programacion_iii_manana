@@ -1,0 +1,50 @@
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  padding: 24px;
+}
+
+h1 { margin-bottom: 16px; }
+
+.card {
+  display: inline-block;
+  margin: 8px;
+  padding: 16px 20px;
+  background: #0ea5e9;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.card:hover {
+  background: #22c55e; /* verde */
+  animation-play-state: paused;
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
+
+.fade {
+  animation: fadeInOut 2s ease-in-out infinite;
+}
+
+@keyframes moveRight {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(60px); }
+}
+
+.move {
+  animation: moveRight 2.2s ease-in-out infinite;
+}
+
+@keyframes pulseZoom {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.pulse {
+  animation: pulseZoom 1.8s ease-in-out infinite;
+}
