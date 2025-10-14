@@ -1,0 +1,42 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(75, 83, 124);
+    padding: 10px;
+    color:rgb(141, 176, 176);
+    height: 100vh;
+}
+.menu div{
+    background-color: rgb(141, 103, 137);
+    margin: 10px;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 8px;
+    box-shadow: 2px 2px 12px rgb(231, 77, 221);
+}
+
+@media (min-width: 600px) {
+    .menu{
+        flex-direction: row;
+        height: auto;
+    }
+    .menu div{
+        width: auto;
+        flex: 1;
+    }
+}
+@media (min-width: 1024px) {
+    .menu{
+        justify-content: space-around;
+        padding: 20px 50px;
+    }
+    .menu div{
+        font-size: 2em;
+        margin: 0 20px;
+        padding: 30px;
+    }
+}
