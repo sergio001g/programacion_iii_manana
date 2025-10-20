@@ -1,15 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
 <head> 
-  <meta charset="UTF-8">
-  <title>AliAcademy - Métodos JavaScript</title>
-  <script>
-      console.log("Bienvenido al sistema de admisiones de AliAcademy (JS Interno)");
-  </script>
-  <script src="../javascript/01_metodos.js"></script>
+    <meta charset="UTF-8">
+    <title>AliAcademy - Admisiones</title>
+
+    <!-- JavaScript Interno -->
+    <script>
+        console.log("Hello desde Javascript Interno - AliAcademy");
+        function mostrarMensaje() {
+            alert("¡Bienvenido a AliAcademy! Prepárate para inscribirte.");
+        }
+    </script>
+
+    <!-- JavaScript Externo -->
+    <script src="../javascript/01_metodos.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            padding: 40px;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: darkgreen;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        a:hover {
+            background-color: green;
+        }
+    </style>
 </head>
 <body>  
-  <h1>AliAcademy - Plataforma de Admisiones</h1>
-  <a href="#" onclick="alert('¡Gracias por visitar AliAcademy!')">Haz clic para más información</a>
+    <h1>AliAcademy - Admisiones</h1>
+
+    <!-- JavaScript Inline -->
+    <a href="#" onclick="mostrarMensaje()">Ejemplo Javascript Inline - Haz clic aquí</a>
 </body>
 </html>
