@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto - AliAcademy</title>
+</head>
+<body>
+  <header>
+    <h1>Contáctanos</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="acerca.html">Acerca</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="tabla.html">Carreras</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form action="procesar.php" method="post">
+      <fieldset>
+        <legend>Formulario de Admisión</legend>
+
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="15" max="70"><br><br>
+
+        <label for="fecha">Fecha de nacimiento:</label>
+        <input type="date" id="fecha" name="fecha"><br><br>
+
+        <label>Género:</label>
+        <input type="radio" id="masculino" name="genero" value="Masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="femenino" name="genero" value="Femenino">
+        <label for="femenino">Femenino</label><br><br>
+
+        <label for="mensaje">Motivación para postular:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="40"></textarea><br><br>
+
+        <button type="submit">Enviar Solicitud</button>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    <address>Quito - Ecuador | Correo: admisiones@aliacademy.edu.ec</address>
+  </footer>
+</body>
+</html>
