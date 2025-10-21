@@ -1,42 +1,40 @@
-console.log('Variables');
+console.log('Duolingo — Variables');
 
-const saludos = "hola utilozando varibles ";
-console.log("saludos:", saludos);
-console.log("tipos de variables saludos:", typeof saludos);
+const saludo = "Bienvenido a Duolingo";
+console.log("saludo:", saludo);
+console.log("tipo de saludo:", typeof saludo);
 
-const numero = 256;
-console.log("variable de numero:", numero);
-console.log("tipos de variables ", typeof numero);
+const xpInicial = 256;
+console.log("xpInicial:", xpInicial);
+console.log("tipo de xpInicial:", typeof xpInicial);
 
-const boo = true;
-console.log("variable de booleana:", boo);
-console.log("tipos de variables ", typeof boo);
+const premiumActivo = true;
+console.log("premiumActivo:", premiumActivo);
+console.log("tipo de premiumActivo:", typeof premiumActivo);
 
-const indef = undefined;
-console.log("variable indefinida:", indef);
-console.log("tipos de variables ", typeof indef);
+let cursoSiguiente = undefined;
+console.log("cursoSiguiente:", cursoSiguiente);
+console.log("tipo de cursoSiguiente:", typeof cursoSiguiente);
 
-const nula = null;
-console.log("variable nula:", nula);
-console.log("tipos de variables ", typeof nula);
+const eventoEspecial = null;
+console.log("eventoEspecial:", eventoEspecial);
+console.log("tipo de eventoEspecial:", typeof eventoEspecial);
 
-const bigentero = 3984928238n; 
-console.log("variable bigint:", bigentero);
-console.log("tipos de variables ", typeof bigentero);
+const megaPuntos = 3984928238n; 
+console.log("megaPuntos (bigint):", megaPuntos);
+console.log("tipo de megaPuntos:", typeof megaPuntos);
 
-
-persona = {
+const usuario = {
     nombre: "Sergio",
     edad: 19,
+    idiomaMeta: 'Inglés',
+    rachaDias: 7
 };
+console.log("usuario:", usuario);
+console.log("tipo de usuario:", typeof usuario);
 
-
-console.log("variable objeto:", persona);
-console.log("tipos de variables ", typeof persona);
-
-
-numeros = [1, 2, 3, 4, 5];
-console.log("variable array:", numeros);
-console.log("tipos de variables ", typeof numeros);
+const rachaDiaria = [1, 2, 3, 4, 5];
+console.log("rachaDiaria:", rachaDiaria);
+console.log("tipo de rachaDiaria:", typeof rachaDiaria);
 
 
