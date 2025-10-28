@@ -1,0 +1,16 @@
+.grid {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    gap: 100px;
+    background-color: rgb(122, 122, 218);
+    padding: 10px;
+}
+.item {
+    background-color: rgb(83, 171, 83);
+    padding: 20px;
+    border: 2px solid rgb(171, 119, 99);
+    text-align: center;
+    border: 20px solid white;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.5);
+}

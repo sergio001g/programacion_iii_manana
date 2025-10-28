@@ -1,0 +1,11 @@
+.fondo {
+    color:white;
+    background-image: url("fondooo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: aqua;
+    padding: 20px;
+    opacity: 0.9;
+    text-align: center;
+    font-size: 24px;
+}
