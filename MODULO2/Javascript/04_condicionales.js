@@ -4,15 +4,15 @@ if (temperatura > 30) {
     console.log("Hace calor");
 }
 
-let password = "pass123";
-if (password === "pass12345") {
-    console.log("Usuario logueado");
-} else {    
+let password = "admin123";
+if (password === "admin12345") {
+    console.log("Usuario loguequeado");
+} else {
     console.log("Acceso denegado");
 }
 
 let nota = 7;
-if (nota >= 7) {
+if (nota >= 9) {
     console.log("Sobresaliente");
 } else if (nota >= 6) {
     console.log("Aprobado");
@@ -26,45 +26,55 @@ if (edad >= 18) {
     if (tiene_licencia) {
         console.log("Puede conducir");
     } else {
-        console.log("Necesita licencia para conducir");
+        console.log("No tiene licencia");
     }
 } else {
-    console.log("Es menor de edad");
+    console.log("Menor de edad");
 }
 
-let edad2 = 20;
-let tiene_licencia2 = true;
+edad = 20;
+tiene_licencia = true;
 if (edad >= 18 && tiene_licencia) {
     console.log("Puede conducir");
 } else {
-    console.log("No puede conducir");
+    console.log("Menor de edad o no tiene licencia");
 }
 
-// Estructura Switch
+//estructura switch
 let dia = "lunes";
-
-
 switch (dia) {
     case "lunes":
         console.log("Inicio de semana");
         break;
     case "viernes":
-        console.log("Último día laboral");
+        console.log("Fin de semana");
         break;
     default:
         console.log("Día normal");
 }
 
-let n1 = 10;
-let n2 = 5;
-let n3 = 12;
-
-if (n1 >= n2 && n1 >= n3) {
-    console.log("El número mayor es:", n1);
-} else if (n2 >= n1 && n2 >= n3) {
-    console.log("El número mayor es:", n2);
-} else {
-    console.log("El número mayor es:", n3);
+let n1=10;
+let n2=5;
+let n3=8;
+switch (true) {
+    case (n1>=n2 && n1>=n3):
+        console.log("n1 es el mayor");
+        break;
+    case (n2>=n1 && n2>=n3):
+        console.log("n2 es el mayor");
+        break;
+    default:
+        console.log("n3 es el mayor");
 }
 
+let a = 10;
+let b = 20;
+let c = 15;
 
+if (a > b && a > c) {
+    console.log("a es el mayor");
+} else if (b > a && b > c) {
+    console.log("b es el mayor");
+} else {
+    console.log("c es el mayor");
+}
