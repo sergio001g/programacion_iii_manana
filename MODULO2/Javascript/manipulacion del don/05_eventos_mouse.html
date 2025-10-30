@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+
+    <script src="05_eventos_mouse.js" defer></script>
+    <style>
+        .boton {
+            background-color: rgb(2, 255, 230);
+            color: rgb(205, 16, 16);
+            padding: 10px;
+            text-decoration: none;
+        }
+        
+        .area {
+            width: 280px;
+            height: 160px;
+            border: 2px dashed #9ca3af;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 12px;
+            user-select: none;
+            transition: background 0.2s, transform 0.2s, border-color 0.2s;
+        }
+        .area.hover { background: #e0f2ff; border-color: #60a5fa; }
+        #coords { font-family: monospace; color: #374151; }
+        h1 { font-family: system-ui, Arial, sans-serif; }
+    </style>
+</head>
+
+<body>
+    <h1 id="mensaje">TEXTO ORIGINAL</h1>
+    <a id="link" href="#"> Link</a>
+    <h2>Eventos del mouse</h2>
+    <div id="area" class="area">Mueve el mouse aquí</div>
+    <p id="coords"></p>
+</body>
+
+</html>

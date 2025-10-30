@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>04 - Eventos básicos</title>
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; margin: 20px; }
+    .row { display: flex; gap: 8px; align-items: center; margin: 10px 0; }
+    button { background: #4a90e2; color: #fff; border: none; border-radius: 8px; padding: 8px 12px; cursor: pointer; }
+    button:hover { filter: brightness(1.05); }
+    #miParrafo { padding: 8px 12px; border-radius: 8px; }
+    .bg { background: #e0f2ff; }
+    input { border: 1px solid #e5e7eb; border-radius: 8px; padding: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Eventos básicos con botones</h1>
+
+  <p id="miParrafo">Texto inicial del párrafo</p>
+  <div class="row">
+    <button id="miBoton">Cambiar texto</button>
+    <button id="btnRojo">Rojo</button>
+    <button id="btnAzul">Azul</button>
+    <button id="btnToggle">Alternar fondo</button>
+  </div>
+
+  <div class="row">
+    <input id="nombre" type="text" placeholder="Escribe tu nombre" />
+    <span id="salida"></span>
+  </div>
+
+  <script src="04_eventos.js" defer></script>
+</body>
+</html>

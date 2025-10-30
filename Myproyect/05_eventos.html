@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>05 - Eventos básicos en HTML + JS</title>
+  <style>
+    :root { --primario: #4a90e2; --suave: #f5f7fa; --borde: #e3e7ee; }
+    body { font-family: system-ui, Arial, sans-serif; background: var(--suave); margin: 0; padding: 24px; color: #1f2937; }
+    h1 { margin: 0 0 16px; font-size: 22px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+    .card { background: #fff; border: 1px solid var(--borde); border-radius: 10px; padding: 16px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+    .card h2 { font-size: 16px; margin: 0 0 8px; color: #111827; }
+    .row { display: flex; gap: 10px; align-items: center; }
+    button { background: var(--primario); color: #fff; border: none; border-radius: 8px; padding: 8px 12px; cursor: pointer; }
+    button:hover { filter: brightness(1.05); }
+    input, select { border: 1px solid var(--borde); border-radius: 8px; padding: 8px; }
+    .color-preview { width: 40px; height: 24px; border-radius: 6px; border: 1px solid var(--borde); }
+    .hover-box { border: 2px dashed var(--borde); border-radius: 12px; padding: 16px; text-align: center; background: #fff; transition: background 0.2s, transform 0.2s; }
+    .hover-box.hover { background: #e0f2ff; transform: scale(1.02); border-color: #bfe0ff; }
+    .msg { color: #065f46; background: #d1fae5; border: 1px solid #a7f3d0; padding: 8px; border-radius: 8px; display: none; }
+    footer { margin-top: 20px; font-size: 12px; color: #6b7280; }
+  </style>
+</head>
+<body>
+  <h1>Eventos básicos (bonitos y simples)</h1>
+  <div class="grid">
+    <section class="card">
+      <h2>Click en botón</h2>
+      <div class="row">
+        <button id="btnSaludar">Saludar</button>
+        <p id="saludo" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Escritura en tiempo real</h2>
+      <div class="row">
+        <input id="nombre" type="text" placeholder="Escribe tu nombre" />
+        <p id="salidaNombre" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Cambio de color</h2>
+      <div class="row">
+        <select id="selectColor" aria-label="Selecciona un color">
+          <option value="">Selecciona…</option>
+          <option value="#f87171">Rojo</option>
+          <option value="#34d399">Verde</option>
+          <option value="#60a5fa">Azul</option>
+          <option value="#fbbf24">Amarillo</option>
+        </select>
+        <div id="colorPreview" class="color-preview" title="Vista previa"></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Mouse over / out</h2>
+      <div id="hoverBox" class="hover-box">Pasa el mouse por aquí</div>
+    </section>
+
+    <section class="card">
+      <h2>Formulario (submit)</h2>
+      <form id="formDemo">
+        <div class="row">
+          <input id="email" type="email" placeholder="Tu email" required />
+          <button type="submit">Enviar</button>
+        </div>
+        <p id="msgForm" class="msg" aria-live="polite"></p>
+      </form>
+    </section>
+  </div>
+
+  <footer>Tip: abre este archivo directamente en el navegador.</footer>
+  <script src="../MODULO2/Javascript/05_eventos.js" defer></script>
+</body>
+</html>
