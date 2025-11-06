@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos</title>
+  <style>
+    body { font-family: system-ui, Arial; display: grid; gap: 12px; padding: 20px; }
+    .row { display: flex; gap: 8px; }
+    .card { border: 1px solid #ccc; padding: 8px; border-radius: 6px; display: grid; gap: 4px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
+    .selected { outline: 2px solid #1976d2; }
+  </style>
+</head>
+<body>
+  <h1>Productos</h1>
+  <div class="row">
+    <input id="filter" placeholder="Filtrar por nombre" />
+    <button id="clear">Limpiar</button>
+  </div>
+  <p>Seleccionados: <span id="selected">0</span></p>
+  <div id="products" class="grid"></div>
+  <script src="./07_productos.js"></script>
+</body>
+</html>

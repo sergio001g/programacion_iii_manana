@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos de Mouse</title>
+  <style>
+    body { font-family: system-ui, Arial; display: grid; gap: 12px; padding: 20px; }
+    #box { width: 240px; height: 180px; border: 2px solid #333; display: grid; place-items: center; user-select: none; }
+    .row { display: flex; gap: 16px; align-items: center; }
+    .count { font-weight: 600; }
+  </style>
+  </head>
+<body>
+  <h1>Eventos de Mouse</h1>
+  <div id="box">Área interactiva</div>
+  <div class="row">
+    <span>Entradas: <span id="enter" class="count">0</span></span>
+    <span>Salidas: <span id="leave" class="count">0</span></span>
+    <span>Clicks: <span id="clicks" class="count">0</span></span>
+    <span>Movimientos: <span id="moves" class="count">0</span></span>
+  </div>
+  <script src="./05_eventos_mouse.js"></script>
+</body>
+</html>

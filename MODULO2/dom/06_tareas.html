@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tareas</title>
+  <style>
+    body { font-family: system-ui, Arial; display: grid; gap: 12px; padding: 20px; }
+    .row { display: flex; gap: 8px; }
+    ul { list-style: none; padding: 0; }
+    li { display: flex; align-items: center; gap: 8px; padding: 4px 0; }
+    .done { text-decoration: line-through; color: #777; }
+    button { cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>Tareas</h1>
+  <div class="row">
+    <input id="taskInput" placeholder="Nueva tarea" />
+    <button id="addButton">Agregar</button>
+  </div>
+  <p>Total: <span id="total">0</span> | Hechas: <span id="done">0</span></p>
+  <ul id="taskList"></ul>
+  <script src="./06_tareas.js"></script>
+</body>
+</html>

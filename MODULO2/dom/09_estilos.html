@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manipular Estilos</title>
+  <style>
+    :root { --accent: #1976d2; }
+    body { font-family: system-ui, Arial; display: grid; gap: 16px; padding: 20px; }
+    .panel { display: grid; gap: 10px; max-width: 640px; }
+    .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+    #target { width: 280px; height: 160px; display: grid; place-items: center; border: 2px solid #333; background: #f5f5f5; color: #111; }
+    .shadow { box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
+    .rounded { border-radius: 16px; }
+    .rotate { transform: rotate(3deg); }
+    .theme-light { background: #fafafa; color: #111; border-color: #555; }
+    .theme-dark { background: #111; color: #fafafa; border-color: #777; }
+    button, input, select { padding: 6px 10px; }
+  </style>
+</head>
+<body>
+  <h1>Manipular Estilos</h1>
+  <div class="panel">
+    <div id="target">Caja de ejemplo</div>
+    <div class="row">
+      <label>Fondo <input id="bg" type="color" value="#f5f5f5"></label>
+      <label>Texto <input id="fg" type="color" value="#111111"></label>
+      <label>Tamaño <input id="size" type="range" min="12" max="48" value="16"></label>
+      <label>Radio <input id="radius" type="range" min="0" max="30" value="2"></label>
+      <label>Tema
+        <select id="theme">
+          <option value="none">Ninguno</option>
+          <option value="light">Claro</option>
+          <option value="dark">Oscuro</option>
+        </select>
+      </label>
+    </div>
+    <div class="row">
+      <label><input id="chkShadow" type="checkbox"> Sombra</label>
+      <label><input id="chkRounded" type="checkbox"> Bordes redondeados</label>
+      <label><input id="chkRotate" type="checkbox"> Rotar</label>
+      <button id="reset">Reset</button>
+    </div>
+  </div>
+  <script src="./09_estilos.js"></script>
+</body>
+</html>

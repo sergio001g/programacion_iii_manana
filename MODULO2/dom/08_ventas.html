@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ventas</title>
+  <style>
+    body { font-family: system-ui, Arial; display: grid; gap: 12px; padding: 20px; }
+    .row { display: flex; gap: 8px; }
+    input { width: 120px; }
+    .result { display: grid; gap: 4px; }
+  </style>
+</head>
+<body>
+  <h1>Ventas</h1>
+  <div class="row">
+    <input id="price" type="number" step="0.01" placeholder="Precio" />
+    <input id="qty" type="number" step="1" placeholder="Cantidad" />
+    <button id="calc">Calcular</button>
+  </div>
+  <div class="result">
+    <span>Subtotal: <strong id="subtotal">0.00</strong></span>
+    <span>Impuesto (18%): <strong id="tax">0.00</strong></span>
+    <span>Total: <strong id="total">0.00</strong></span>
+  </div>
+  <script src="./08_ventas.js"></script>
+</body>
+</html>
